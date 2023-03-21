@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Codeiaks</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:widgets:autoload" content="off">
+  <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" -->
+  <link href="https://fonts.googleapis.com/css?family=Arizonia|Lato" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/aa377c1dd9.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <button onclick="topFunction()" id="topBtn" title="Scroll Up">Top</button>
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <div id="centeringName" class="btn-group btn-group-toggle centerNames" data-toggle="buttons">
+        <label id="name1" class="btn btn-lg btn-primary">
+          <input type="radio" name="profiles" autocomplete="off" onclick="showName('name1')" value="mrs" checked> Mrs.Codeiaks
+        </label>
+        <label id="name2" class="btn btn-lg btn-primary">
+          <input type="radio" name="profiles" autocomplete="off" onclick="showName('name2')" value="mr"> Mr.Codeiaks
+        </label>
+      </div>
+    </div>
+  </div>
+  <!-- Container (About Section) -->
+  <div class="info" style="display:none;">
+    <div class="w3-content w3-container w3-padding-64" id="MRS_about">
+      <p class="w3-center titles">About</p>
+      <p class="w3-center"><em><span id="sentence1"></span></em></p>
+      <p id="paragraph1"></p>
+
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <p class="name"><b><i class="fa fa-user w3-margin-right"></i><span id="username"></span></b></p><br>
+          <img id="userimg" src="images/viktoriia_pfp.png" class="w3-round w3-image" alt="Me" width="500" height="333">
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+          <p>
+            <b style="font-size:18px;">Areas of interest:</b><br>
+          <ul>
+            <li id="item1"></li>
+            <li id="item2"></li>
+            <li id="item3"></li>
+            <li id="item4"></li>
+            <li id="item5"></li>
+            <li id="item6"></li>
+            <li id="item7"></li>
+            <li id="item8"></li>
+            <li id="item9"></li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Parallax Education Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min" id="pubBanner">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-black w3-wide">PUBLICATIONS</span>
+      </div>
+    </div>
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="publication">
+      <p class="w3-center titles">Curriculum Vitae</p>
+      <!--h3 class="w3-center">Curriculum Vitae</h3-->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m0 imgContainer">
+
+          <div class="resumeeDownload">
+            <a href="documents/viktoriiaCherkasova_CV.pdf" target="_blank">Up-to-date Curriculum vitae </a><i class="fas fa-external-link-alt"></i></i>
+          </div>
+        </div>
+      </div>
+      <!--h3 class="w3-center">CHAPTERS</h3-->
+      <p class="w3-center titles" style="font-size:34px !important;">Chapters</p>
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m0 imgContainer">
+          <div class="publicationsBookList">
+            <ol>
+              <li>(2021, January). DNA Mismatch Repair in Mammals. In Igor Kovalchuk, Olga Kovalchuk (Ed.), <em>Genome stability: from virus to human application (2 ed., Vol. 26). Canada: Elsevier. </em><br><a
+                  href="https://doi.org/10.1016/B978-0-323-85679-9.00018-0" target="_blank">External Link </a><i class="fas fa-external-link-alt"></i></li>
+            </ol>
+          </div>
+          <!--h3 class="w3-center">PAPERS</h3-->
+          <p class="w3-center titles" style="font-size:34px !important;">Papers</p>
+          <div class="publicationsPaperList">
+            <ol reversed>
+              <li>Cherkasova, Viktoriia; Kovalchuk, Igor; Kovalchuk, Olga. (2021, August). Cannabinoids and Endocannabinoid System Changes in Intestinal Inflammation and Colorectal Cancer. Cancers, 1-44. <br><a
+                  href="https://doi.org/10.3390/cancers13174353" target="_blank">External Link </a><i class="fas fa-external-link-alt"></i></li>
+              <li>Marta Gerasymchuk, Viktoriia Cherkasova, Olga Kovalchuk, Igor Kovalchuk. (2020, July). The Role of microRNAs in Organismal and Skin Aging. International Journal of Molecular Science, 21(5281), 1-36. <br><a
+                  href="https://doi:10.3390/ijms21155281" target="_blank">External Link </a><i class="fas fa-external-link-alt"></i></li>
+              <li>Viktoriia Cherkasova. (2017). Oxidative stress in case of acute pancreatitis and under conditions of Dexamethasone correction. “Deutscher Wissenschaftsherold- German Science Herald”, 3, 50-55. <br><a
+                  href="https://dwherold.de/onewebmedia/2017/3-2017/Cherkasova.pdf" target="_blank">External Link </a><i class="fas fa-external-link-alt"></i></li>
+              <li>Viktoriia Cherkasova. (2017). Role of oxidative modification of proteins in experimental acute pancreatitis with dexamethasone correction. “Bukovinian Medical Herald”, 21(2(82)), 110-114. <br><a
+                  href="https://www.bsmu.edu.ua/files/BMV/BMV-2017-21-02(82)%20p.2/29.pdf" target="_blank">External Link </a><i class="fas fa-external-link-alt"></i></li>
+              <li>Viktoriia Cherkasova. (2017). Role of middle mass molecules in experimental L-arginine induced pancreatitis and the correction by dexamethasone. “Actual Problems of Transport Medicine”, 2(48), 125-130. <br><a
+                  href="http://www.aptm.org.ua/wp-content/uploads/2017/11/Номер-48-ПС-2.pdf" target="_blank">External Link </a><i class="fas fa-external-link-alt"></i></li>
+              <li>Viktoriia Cherkasova, Luibomyr Zaiats. (2017). Changes of Prooxidant-Antioxidant Systems in Experimental Acute Pancreatitis. Galician medical journal, 24(3), 1-4. <br><a href="https://doi.org/10.21802/gmj.2017.3.13"
+                  target="_blank">External Link </a><i class="fas fa-external-link-alt"></i></li>
+              <li>M.R. Gerasymchuk, L.M. Zaiats, V.V. Cherkasova, I.P. Klishch. (2016). Influence Of the Polyetiological Experimental Conditions On The Lungs Functional Status. Experimental and Clinical Medicine, 2, 44-48. <br><a
+                  href="http://journals.uran.ua/index.php/2414-4517/article/view/117780" target="_blank">External Link </a><i class="fas fa-external-link-alt"></i></li>
+              <li>Marta Gerasymchuk, Viktoriia Cherkasova, Oksana Svystak. (2015). Role of cell defence disorders in the progression of oxidative stress under acute surgical pathology. Yale review of education and science, 1(16), 559-564. <br><a
+                  href="https://www.academia.edu/33742337/Yale_Review_of_Education_and_Science" target="_blank">External Link </a><i class="fas fa-external-link-alt"></i></li>
+              <li>M. R. Gerasymchuk, B.M. Kishchuk, L.M. Zayats, V.V. Cherkasova. (2013). The Role of Endogenous Intoxication In The Lung Injury Development In Experimental Diabetes Mellitus. Clinical Pharmacy, 17(4), 48-51. <br><a
+                  href="http://nbuv.gov.ua/UJRN/KlPh_2013_17_4_14" target="_blank">External Link </a><i class="fas fa-external-link-alt"></i></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-black w3-wide">EDUCATION</span>
+      </div>
+    </div>
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+      <p class="w3-center titles">Institutions</p>
+      <div class="w3-center">
+        <div class="w3-col w3-center">
+          <img id="school1" src="images/ivanov-frankivsklogo.png" style="width:250px;height:250px;" alt="Ivano Frankivsk Medical School">
+          <p id="paragraph2"></p>
+        </div>
+        <div class="w3-col w3-center">
+          <img src="images/uleth.png" style="width:250px;height:250px;" alt="University of Lethbridge">
+          <p id="paragraph3"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-black w3-wide">SOCIAL</span>
+      </div>
+    </div>
+    <div class="w3-content w3-container w3-padding-64">
+      <p class="w3-center titles">Twitter</p>
+      <br>
+      <div class="w3-row-padding w3-center" id="socialsMRS">
+        <a id="social1" href="https://twitter.com/MrsCodeiaks" class="twitter-follow-button" data-size="large" target="_blank">Follow @MrsCodeiaks</a>
+        <a id="social2" href="https://twitter.com/MrsCodeiaks" class="twitter-timeline" data-tweet-limit=3 data-chrome="transparent">Tweets by @MrsCodeiaks</a>
+      </div>
+      <div class="w3-row-padding w3-center" id="socialsMR">
+        <a id="social3" href="https://twitter.com/Codeiaks" class="twitter-follow-button" data-size="large" target="_blank">Follow @MrCodeiaks</a>
+        <a id="social4" href="https://twitter.com/Codeiaks" class="twitter-timeline" data-tweet-limit=3 data-chrome="transparent">Tweets by @MrCodeiaks</a>
+      </div>
+    </div>
+    <!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-red w3-wide">0xApes/TRIBΞ</span>
+      </div>
+    </div>
+  </div>
+
+  < <div class="honeyGallery">
+    <ul class="myContainerIMG" id="myUL">
+    </ul>
+  </div>
+
+  <div id="modal01" class="w3-modal w3-black modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image modal-content">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div> --> -->
+  <footer class="w3-center w3-red w3-padding-16 w3-hover-opacity-off">
+    <p>
+      Copyrights &copy; Codeiaks - 2023
+    </p>
+  </footer>
+  <script src="javascript/scripts.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBQSJXFF8T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KBQSJXFF8T');
+  </script>
+</body>
+
+</html>
